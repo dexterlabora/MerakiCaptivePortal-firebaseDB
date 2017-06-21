@@ -1,0 +1,36 @@
+[debug] [2017-06-20T09:24:37.865Z] ----------------------------------------------------------------------
+[debug] [2017-06-20T09:24:37.867Z] Command:      /Users/dexter/.nvm/versions/node/v7.7.0/bin/node /Users/dexter/.nvm/versions/node/v7.7.0/bin/firebase serve
+[debug] [2017-06-20T09:24:37.868Z] CLI Version:  3.9.1
+[debug] [2017-06-20T09:24:37.868Z] Platform:     darwin
+[debug] [2017-06-20T09:24:37.868Z] Node Version: v7.7.0
+[debug] [2017-06-20T09:24:37.869Z] Time:         Tue Jun 20 2017 11:24:37 GMT+0200 (CEST)
+[debug] [2017-06-20T09:24:37.869Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-06-20T09:24:37.883Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-06-20T09:24:37.883Z] > authorizing via signed-in user
+[debug] [2017-06-20T09:24:37.885Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-06-20T09:24:37.886Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/OBdCtjnLLkLJ84Jng_g4EoiTCpZGqywhKjy4ssn6ViQIX4br9VXCTyNmcsFOWi-X',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Tue Jun 20 2017 11:24:37 GMT+0200 (CEST)
+[debug] [2017-06-20T09:24:38.257Z] <<< HTTP RESPONSE 200
+[debug] [2017-06-20T09:24:38.286Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/merakisimplesplash  
+ Tue Jun 20 2017 11:24:38 GMT+0200 (CEST)
+[debug] [2017-06-20T09:24:40.237Z] <<< HTTP RESPONSE 200
+[debug] [2017-06-20T09:24:40.238Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/merakisimplesplash/tokens  
+ Tue Jun 20 2017 11:24:40 GMT+0200 (CEST)
+[debug] [2017-06-20T09:24:40.997Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/dexter/gdrive-personal/node-apps/merakiSplashSimple'...
+[info] 
+[debug] [2017-06-20T09:24:41.001Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/merakisimplesplash  
+ Tue Jun 20 2017 11:24:41 GMT+0200 (CEST)
+[debug] [2017-06-20T09:24:41.771Z] <<< HTTP RESPONSE 200
+[debug] [2017-06-20T09:24:41.771Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/1099322984812/clients/_:getWebAppConfig  
+ Tue Jun 20 2017 11:24:41 GMT+0200 (CEST)
+[debug] [2017-06-20T09:24:42.294Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+

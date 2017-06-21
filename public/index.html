@@ -1,0 +1,124 @@
+<!--
+This sample web application provides a simple Click-Through Splash page for Cisco Meraki networks and stores the form data into a Google Firebase database.
+Usage:
+* Update the merakiFireBase.js file with your Google Firebase details.
+* Configure your Cisco Meraki wireless network with a Click-through splash page.
+* Configure the "Custom URL" to point to your webserver that is hosting this HTML file.
+* Update the "Walled Garden" with the IP or Domain Name for your webserver and any supporting resources
+
+
+This is example was written by:
+Cory Guynn
+www.InternetOfLEGO.com
+2017
+
+LICENSE: MIT
+"Have Fun!, use and abuse"
+-->
+
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script src="js/jquery-3.2.1.min.js"></script>
+
+      <!-- Website Font style -->
+	    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+      <!-- Bootstrap-->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+
+      <!-- Custom CSS Style -->
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+
+      <title>WiFi Login</title>
+    </head>
+    <div class="container">
+
+
+    <div class=" rowcols-md-6">
+      <div class="main-center">
+        <center>
+          <img src="img/meraki-logo.png" style="width:100%;"/>
+          <hr/>  
+        </center>
+      </div>
+    </div>
+      <div class="row cols-md-2">
+      <div class="main-login main-center">
+        <form class="form-horizontal" method="post" action="#">
+          <div class="form-group">     
+            <div class="cols-sm-10">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                <input type="text" class="form-control" name="name" id="name"  placeholder="Your Name" required/>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            
+            <div class="cols-sm-10">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                <input type="email" class="form-control" name="email" id="email"  placeholder="Your@email.com" required/>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+           
+            <div class="cols-sm-10">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+                <input type="text" class="form-control" name="company" id="company"  placeholder="Company Name"/>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <div class="checkbox">
+                <label><input type="checkbox" required><a href="/terms">    Agree to T&S<a></label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <button class="btn btn-primary" type="submit" id="loginButton" name="loginButton">Login to WiFi</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+</div>
+<div class="row">
+  <div class="col-md-4">
+    <p class="copyright">Sample by <a href="http://www.InternetOfLEGO.com" target="_blank" title="Internet of LEGO">Internet of LEGO</a></p>
+  </div>
+</div>
+
+
+    <hr>
+    <div class="card-header">
+      Demo Stats, remove these for production
+    </div>
+    <div class="card">
+      <div class="card-block">
+        <h6>Base Grant Url</h6><div class="baseGrantURL"></div>
+        <h6>User Continue URL</h6><div class="userContinueURL"></div>
+        <h6>Client IP</h6><div class="clientIP"></div>
+        <h6>Client MAC</h6><div class="clientMAC"></div>
+        <h6>Access Point MAC</h6><div class="nodeMAC"></div>
+        <h6>Login Results</h6><div class="result"></div>
+      </div>
+    </div>
+
+    <!-- Bootrstrap JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Google Firebase - Database Storage for Form Data -->
+    <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase-database.js"></script>
+
+
+    <!-- Meraki Authentication and Form Storage, using Firebase -->
+    <script src="js/merakiFirebase.js"></script>
+</html>
